@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Deepak Yadav
+% Website: https://github.com/deepak7376/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Deepak Yadav} & Email: \href{mailto:dky.united@gmail.com}{dky.united@gmail.com}\\
+  Consultant at Sony (AI and Machine Learning) & Mobile: +91-9836375132 \\
+  \href{https://www.linkedin.com/in/dky7376}{www.linkedin.com/in/dky7376} & \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Engineering Science And Technology}{Howrah, WB}
+      {Master of Technology in Information Technology;  GPA: (7.0/10.0)}{Aug. 2017 -- June. 2019}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Machine Learning, Algorithms, Information and Coding Theory, Advanced Database Management System.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {United College of Engineering and Research}{Allahabad, UP}
+      {Bachelor of Technology in Electronics and Communication Engineering;  GPA:(6.8/10.0)}{Aug. 2010 -- July. 2014}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Signal and Systems, Microprocessors, VLSI Design and Embedded System.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience (4.5 years)}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Sony}{Bengaluru, Karnataka}
+    {Consultant}{Jun 2021 - Present}
+    \resumeItemListStart
+      \resumeItem{Objective}
+        {Constructing a versatile framework to facilitate the effortless evaluation of the accuracy of diverse deep learning models on the IMX500 Intelligent Vision Sensor device.}
+      \resumeItem{Contribution}
+        {Developed a comprehensive framework capable of seamlessly accommodating various state-of-the-art machine learning models, including classification, object detection, and semantic segmentation. Assessed the accuracy of these models on IMX500 devices, ensuring reliable performance across different use cases.}
+      \resumeItem{Tools}
+        {Tensorflow, Pytorch, Scikit-learn, Python, Streamlit, Object-oriented design.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Activa Inc.}{Hyderabad, Telangana}
+    {Associate Data Scientist}{Dec 2019 - Apr 2021}
+    \resumeItemListStart
+      \resumeItem{Objective}
+        {Building an automated AI platform that works with tabular data, raw text, time series, and images.}
+      \resumeItem{Contribution}
+        {Automated the time series forecasting pipeline using a genetic algorithm, resulting in a significant reduction in training time. Implemented distributed training across multiple GPUs for performance optimization. Deployed models automatically across a variety of environments, including creating a REST endpoint and running as a service in the cloud.}
+      \resumeItem{Tools}
+        {Tensorflow, Pytorch, Scikit-learn, Python, Docker, Flask, AWS EC2, AWS Kinesis, REST, CI/CD.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Activa Inc.}{Hyderabad, Telangana}
+    {Data Science Intern}{Aug 2019 - Dec 2019}
+    \resumeItemListStart
+      \resumeItem{Objective}
+        {Developed a proof of concept (PoC) for United Technologies Corp. (UTC) to automate aircraft engine internal crack detection.}
+      \resumeItem{Contribution}
+        {Built a computer vision model using Mask-RCNN that can easily detect cracks in the internal parts of the engine.}
+      \resumeItem{Tools}
+        {Computer Vision, Object Detection, Instance Segmentation, Mask-RCNN, Python, Tensorflow, OpenCV.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IIEST Shibpur}{Howrah, WB}
+    {Postgraduate Researcher}{July 2018 - June 2019}
+    \resumeItemListStart
+      \resumeItem{Objective}
+        {Fault Detection in Wireless Sensor Networks (WSNs).}
+      \resumeItem{Contribution}
+        {Conducted a comprehensive comparative analysis of statistical and machine learning methods for fault detection in Wireless Sensor Networks (WSNs). Developed a robust algorithm that effectively identifies faulty nodes in WSNs, resulting in enhanced accuracy compared to existing methods. The designed algorithm significantly improves the detection capabilities, providing a reliable solution for fault identification in WSNs.}
+     \resumeItem{Tools}
+      {Python, Machine Learning, Statistics, IoT, Sensor Networks.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Open Source Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{\href{https://github.com/deepak7376/robustbase}{Robustbase}}
+    {Open Source Python library for statistical estimation with 23,000+ downloads.}
+  \resumeSubItem{\href{https://github.com/deepak7376/HyperTune}{HyperTune}}
+    {Open source hyper-parameter optimization library using genetic algorithms.}
+  \resumeSubItem{\href{https://github.com/deepak7376/WSNFault}{WSNFault}}
+    {Statistical fault detection algorithm for Wireless Sensor Networks (WSNs).}
+  \resumeSubItem{\href{https://github.com/deepak7376/downcast}{downcast}}
+    {Automatic reduction of pandas data frame size with 44,000+ downloads.}
+  \resumeSubItem{\href{https://github.com/deepak7376/complex}{complex}}
+    {Compute complex number operations: addition, subtraction, multiplication, division, and modulus with 32,000+ downloads.}
+\resumeSubHeadingListEnd
+
+
+
+% %--------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+% \resumeSubHeadingListStart
+%   \item \textbf{Languages}: Python, C++, SQL
+%   \item \textbf{Machine Learning}: Computer Vision, Natural Language Processing, ETL, Data science pipeline (cleansing, wrangling, visualization, modeling, interpretation), Statistics, Time series, etc.
+%   \item \textbf{Software Engineering}: Object-Oriented Programming, Data Structure and Algorithms
+%   \item \textbf{Back-end}: Flask, REST API, AWS EC2, AWS Kinesis, AWS Firehose, AWS IoT Core, AWS Lambda, AWS DynamoDB, AWS S3, CI/CD pipeline, Git.
+% \resumeSubHeadingListEnd
+
+
+%--------Extracurricular Activities------------
+% \section{Extracurricular Activities}
+% \resumeSubHeadingListStart
+%   \item{
+%     \textbf{Cricket}:
+%     \begin{itemize}
+%       \item Played competitive cricket at the district level for three years.
+%       \item Participated in multiple inter-school and inter-college cricket tournaments.
+%       \item Developed strong teamwork and leadership skills through regular practice sessions and matches.
+%     \end{itemize}
+%   }
+%   \item{
+%     \textbf{Swimming}:
+%     \begin{itemize}
+%       \item Trained in swimming for five years, achieving an intermediate level of proficiency.
+%       \item Participated in various swimming competitions, including local and regional events.
+%       \item Developed excellent endurance, discipline, and focus through regular training sessions.
+%     \end{itemize}
+%   }
+% \resumeSubHeadingListEnd
+
+\end{document}
